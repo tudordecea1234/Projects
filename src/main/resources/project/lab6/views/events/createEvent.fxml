@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #bb99ff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.lab6.controllers.events.CreateEventController">
+   <children>
+      <Label layoutX="211.0" layoutY="28.0" prefHeight="45.0" prefWidth="177.0" text="Create new event">
+         <font>
+            <Font name="Cambria Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTextField" layoutX="322.0" layoutY="92.0" prefHeight="25.0" prefWidth="208.0" promptText="Event Name" style="-fx-background-color: #8c5691;">
+         <font>
+            <Font name="Cambria" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="dateTextField" layoutX="322.0" layoutY="135.0" prefHeight="25.0" prefWidth="208.0" promptText="dd/mm/yyyy" style="-fx-background-color: #8c5691;" />
+      <TextField fx:id="locationTextField" layoutX="322.0" layoutY="184.0" prefHeight="32.0" prefWidth="208.0" promptText="Location" style="-fx-background-color: #8c5691;" />
+      <TextField fx:id="descriptionTextField" layoutX="139.0" layoutY="239.0" prefHeight="56.0" prefWidth="322.0" promptText="Description" style="-fx-background-color: #8c5691;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="251.0" layoutY="322.0" mnemonicParsing="false" onAction="#createEvent" prefHeight="45.0" prefWidth="98.0" style="-fx-background-color: #5c0e63;" text="Create" textFill="#edeaea">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Label layoutX="122.0" layoutY="92.0" prefHeight="25.0" prefWidth="177.0" text="Event name">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="135.0" prefHeight="25.0" prefWidth="125.0" text="Date of the event">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="187.0" prefHeight="25.0" prefWidth="155.0" text="Location of the event">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

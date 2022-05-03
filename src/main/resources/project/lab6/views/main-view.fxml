@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox fx:id="horizontalBox" prefHeight="402.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.lab6.controllers.MainViewController">
+    <VBox maxHeight="Infinity" minWidth="150" stylesheets="@../css/main-view.css">
+        <Button alignment="CENTER_LEFT" maxHeight="Infinity" maxWidth="Infinity" onAction="#openProfileView" prefHeight="0.0" prefWidth="81.0" text="Profile" VBox.vgrow="ALWAYS">
+            <graphic>
+                <ImageView fitHeight="30" fitWidth="30" preserveRatio="true">
+                    <Image url="@../images/person-icon.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button alignment="CENTER_LEFT" maxHeight="Infinity" maxWidth="Infinity" onAction="#openAddFriendsView" prefHeight="8.0" prefWidth="150.0" text="Add friends" VBox.vgrow="ALWAYS">
+            <graphic>
+                <ImageView fitHeight="30" fitWidth="30" preserveRatio="true">
+                    <Image url="@../images/plus-symbol.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button alignment="CENTER_LEFT" maxHeight="Infinity" maxWidth="Infinity" onAction="#openFriendsView" prefHeight="10.0" prefWidth="150.0" text="Friends" VBox.vgrow="ALWAYS">
+            <graphic>
+                <ImageView fitHeight="30" fitWidth="30" preserveRatio="true">
+                    <Image url="@../images/friends-icon.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button alignment="CENTER_LEFT" maxHeight="Infinity" maxWidth="Infinity" onAction="#openRequestsView" prefHeight="9.0" prefWidth="150.0" text="Requests" VBox.vgrow="ALWAYS">
+            <graphic>
+                <ImageView fitHeight="30" fitWidth="30" preserveRatio="true">
+                    <Image url="@../images/two-people.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button alignment="CENTER_LEFT" maxHeight="Infinity" maxWidth="Infinity" onAction="#openMessagesView" prefHeight="0.0" prefWidth="150.0" text="Messages" VBox.vgrow="ALWAYS">
+            <graphic>
+                <ImageView fitHeight="30" fitWidth="30" preserveRatio="true">
+                    <Image url="@../images/messages-logo.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button alignment="CENTER_LEFT" maxHeight="Infinity" maxWidth="Infinity" onAction="#openMainEvents" prefHeight="0.0" prefWidth="150.0" text="Events" VBox.vgrow="ALWAYS">
+            <graphic>
+                <ImageView fitHeight="30" fitWidth="30" preserveRatio="true">
+                    <Image url="@../images/events-image2.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button alignment="CENTER_LEFT" maxHeight="Infinity" maxWidth="Infinity" onAction="#logout" prefHeight="13.0" prefWidth="150.0" text="Logout" VBox.vgrow="ALWAYS">
+            <graphic>
+                <ImageView fitHeight="30" fitWidth="30" preserveRatio="true">
+                    <Image url="@../images/logout.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+    </VBox>
+</HBox>
